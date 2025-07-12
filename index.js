@@ -13,6 +13,10 @@ app.get('/ping', (req, res) => {
   res.status(200).json({ message: 'pong' });
 });
 
+app.get('/linkedin', (req, res) => {
+  res.status(200).json({ message: 'https://www.linkedin.com/in/kabilan-thennarasu-98881a56/' });
+});
+
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
