@@ -1,0 +1,23 @@
+{
+  "name": "server-kabilan",
+  "version": "1.0.0",
+  "description": "My Experimental node server, Will try to add APIs that retrieve information on me.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabi-beast/node-server-kabilan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kabi-beast/node-server-kabilan/issues"
+  },
+  "homepage": "https://github.com/kabi-beast/node-server-kabilan#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
