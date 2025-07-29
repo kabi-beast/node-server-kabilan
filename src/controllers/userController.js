@@ -10,11 +10,12 @@ const getUserProfile = asyncHandler(async (req, res) => {
     role: 'Software Developer',
     linkedin: 'https://www.linkedin.com/in/kabilan-thennarasu-98881a56/',
     github: 'https://github.com/kabi-beast',
+    youtube: 'https://www.youtube.com/@kabiplayz',
     bio: 'Passionate software developer with expertise in Node.js and web technologies',
     skills: ['Node.js', 'JavaScript', 'Express.js', 'API Development', 'React', 'MongoDB'],
     location: 'Canada',
     experience: 'Full-stack development with modern web technologies',
-    interests: ['Web Development', 'API Design', 'Cloud Computing', 'Open Source']
+    interests: ['Web Development', 'API Design', 'Cloud Computing', 'Open Source', 'Content Creation']
   };
 
   res.status(200).json({
@@ -37,6 +38,22 @@ const getLinkedInProfile = asyncHandler(async (req, res) => {
   });
 });
 
+// @desc    Get YouTube channel
+// @route   GET /api/user/youtube
+// @access  Public
+const getYouTubeChannel = asyncHandler(async (req, res) => {
+  res.status(200).json({
+    success: true,
+    data: {
+      url: 'https://www.youtube.com/@kabiplayz',
+      platform: 'YouTube',
+      channel: 'KabiPlayz',
+      handle: '@kabiplayz',
+      description: 'Gaming and tech content creator'
+    }
+  });
+});
+
 // @desc    Get contact information
 // @route   GET /api/user/contact
 // @access  Public
@@ -46,6 +63,7 @@ const getContactInfo = asyncHandler(async (req, res) => {
     data: {
       linkedin: 'https://www.linkedin.com/in/kabilan-thennarasu-98881a56/',
       github: 'https://github.com/kabi-beast',
+      youtube: 'https://www.youtube.com/@kabiplayz',
       email: 'Contact via LinkedIn',
       availability: 'Open to opportunities',
       preferredContact: 'LinkedIn'
@@ -56,5 +74,6 @@ const getContactInfo = asyncHandler(async (req, res) => {
 module.exports = {
   getUserProfile,
   getLinkedInProfile,
+  getYouTubeChannel,
   getContactInfo
 };

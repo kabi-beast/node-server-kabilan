@@ -78,6 +78,23 @@ Returns LinkedIn profile information.
 }
 ```
 
+#### GET /user/youtube
+Returns YouTube channel information.
+
+**Response:**
+```json
+{
+  "success": true,
+  "data": {
+    "url": "https://www.youtube.com/@kabiplayz",
+    "platform": "YouTube",
+    "channel": "KabiPlayz",
+    "handle": "@kabiplayz",
+    "description": "Gaming and tech content creator"
+  }
+}
+```
+
 #### GET /user/contact
 Returns contact information.
 
@@ -88,6 +105,7 @@ Returns contact information.
   "data": {
     "linkedin": "https://www.linkedin.com/in/kabilan-thennarasu-98881a56/",
     "github": "https://github.com/kabi-beast",
+    "youtube": "https://www.youtube.com/@kabiplayz",
     "email": "Contact via LinkedIn",
     "availability": "Open to opportunities",
     "preferredContact": "LinkedIn"

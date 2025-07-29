@@ -8,6 +8,8 @@ const notFound = (req, res, next) => {
       health: '/health',
       userProfile: '/api/user/profile',
       linkedin: '/api/user/linkedin',
+      youtube: '/api/user/youtube',
+      contact: '/api/user/contact',
       ping: '/api/health/ping'
     }
   });

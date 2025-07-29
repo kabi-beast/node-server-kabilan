@@ -120,6 +120,7 @@ http://localhost:3000/api
 | GET | `/health/status` | Detailed health information |
 | GET | `/user/profile` | Complete user profile |
 | GET | `/user/linkedin` | LinkedIn profile information |
+| GET | `/user/youtube` | YouTube channel information |
 | GET | `/user/contact` | Contact information |
 
 ### Example Response
@@ -130,6 +131,7 @@ http://localhost:3000/api
     "name": "Kabilan Thennarasu",
     "role": "Software Developer",
     "linkedin": "https://www.linkedin.com/in/kabilan-thennarasu-98881a56/",
+    "youtube": "https://www.youtube.com/@kabiplayz",
     "skills": ["Node.js", "JavaScript", "Express.js", "API Development"]
   }
 }

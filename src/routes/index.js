@@ -13,7 +13,11 @@ router.get('/', (req, res) => {
     endpoints: {
       health: '/api/health',
       user: '/api/user',
-      ping: '/api/ping'
+      userProfile: '/api/user/profile',
+      linkedin: '/api/user/linkedin',
+      youtube: '/api/user/youtube',
+      contact: '/api/user/contact',
+      ping: '/api/health/ping'
     }
   });
 });
